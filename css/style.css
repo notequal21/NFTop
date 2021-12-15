@@ -1494,9 +1494,9 @@ h6 {
   -o-transition: all .4s ease;
   transition: all .4s ease;
   pointer-events: none;
-  -webkit-transform: translate(0, 100%);
-      -ms-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  -webkit-transform: translate(0, 100vh);
+      -ms-transform: translate(0, 100vh);
+          transform: translate(0, 100vh);
 }
 
 .mobile-filter__body.active {
