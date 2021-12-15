@@ -1676,6 +1676,10 @@ body {
   .mobile-filter__body {
     display: block;
   }
+
+  .footer {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1691,10 +1695,6 @@ body {
 
   .discount {
     width: calc(100vw - 30px);
-  }
-
-  .footer {
-    display: none;
   }
 
   .mobile-menu {
