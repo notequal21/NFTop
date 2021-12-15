@@ -623,6 +623,18 @@ h6 {
   border-bottom: 1px solid #f5f5f5;
 }
 
+.left-menu__types label {
+  cursor: pointer;
+}
+
+.left-menu__types input {
+  display: none;
+}
+
+.left-menu__types input:checked + .left-menu__types-item {
+  color: #1b1e25;
+}
+
 .left-menu__types-item {
   margin: 30px 0 0 0;
   font-family: Aeroport;
@@ -631,6 +643,9 @@ h6 {
   line-height: 1.5;
   letter-spacing: -0.23px;
   color: #babbbd;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .left-menu__types-item:first-child {
@@ -647,10 +662,6 @@ h6 {
   border-radius: 3px;
   background-color: #f5f6f7;
   margin: 0 0 0 8px;
-}
-
-.left-menu__types-item.active {
-  color: #1b1e25;
 }
 
 .left-menu__filter {

@@ -201,9 +201,18 @@
         Discover
     </div>
     <div class="left-menu__types">
-        <div class="left-menu__types-item active">👑  Best collection</div>
-        <div class="left-menu__types-item">🔥  Popular</div>
-        <div class="left-menu__types-item">⏱  New <span>soon</span></div>
+        <label>
+            <input type="radio" checked name="discover-type">
+            <div class="left-menu__types-item">👑  Best collection</div>
+        </label>
+        <label>
+            <input type="radio" name="discover-type">
+            <div class="left-menu__types-item">🔥  Popular</div>
+        </label>
+        <label>
+            <input type="radio" disabled name="discover-type">
+            <div class="left-menu__types-item">⏱  New <span>soon</span></div>
+        </label>
     </div>
     <div class="left-menu__filter">
         <div class="left-menu__filter-title">Filter by</div>
