@@ -12,6 +12,23 @@ const choices3 = new Choices(element3, {
     searchEnabled: false,
 })
 
+const burgerBtnOpen = document.querySelector('.header-body__col-burger')
+const burgerBtnClose = document.querySelector('.mobile-menu__top-close')
+const mobileMenu = document.querySelector('.mobile-menu')
+
+if (burgerBtnOpen) {
+    burgerBtnOpen.addEventListener('click', () => {
+        mobileMenu.classList.contains('active') 
+        ? mobileMenu.classList.remove('active')
+        : mobileMenu.classList.add('active') 
+    })
+    burgerBtnClose.addEventListener('click', () => {
+        mobileMenu.classList.contains('active') 
+        ? mobileMenu.classList.remove('active')
+        : mobileMenu.classList.add('active') 
+    })
+}
+
 
 
 function testWebP(callback) {
