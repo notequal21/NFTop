@@ -1682,6 +1682,10 @@ body {
             flex: 0 0 47%;
   }
 
+  .discover-body__item-img {
+    height: 300px;
+  }
+
   .discount {
     width: calc(100vw - 30px);
   }
