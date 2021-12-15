@@ -1153,6 +1153,7 @@ h6 {
   display: inline-block;
   width: 1px;
   height: 14px;
+  border-radius: 24%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   background-color: rgba(18, 18, 18, 0.3);
@@ -1494,9 +1495,9 @@ h6 {
   -o-transition: all .4s ease;
   transition: all .4s ease;
   pointer-events: none;
-  -webkit-transform: translate(0, 100vh);
-      -ms-transform: translate(0, 100vh);
-          transform: translate(0, 100vh);
+  -webkit-transform: translate(0, 130vh);
+      -ms-transform: translate(0, 130vh);
+          transform: translate(0, 130vh);
 }
 
 .mobile-filter__body.active {
