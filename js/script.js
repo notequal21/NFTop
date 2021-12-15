@@ -15,17 +15,53 @@ const choices3 = new Choices(element3, {
 const burgerBtnOpen = document.querySelector('.header-body__col-burger')
 const burgerBtnClose = document.querySelector('.mobile-menu__top-close')
 const mobileMenu = document.querySelector('.mobile-menu')
+const body = document.querySelector('body')
 
 if (burgerBtnOpen) {
     burgerBtnOpen.addEventListener('click', () => {
-        mobileMenu.classList.contains('active') 
-        ? mobileMenu.classList.remove('active')
-        : mobileMenu.classList.add('active') 
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active')
+            body.classList.remove('_lock')
+        } else {
+            mobileMenu.classList.add('active')
+            body.classList.add('_lock')
+        }
     })
     burgerBtnClose.addEventListener('click', () => {
-        mobileMenu.classList.contains('active') 
-        ? mobileMenu.classList.remove('active')
-        : mobileMenu.classList.add('active') 
+        if (mobileMenu.classList.contains('active')) {
+            mobileMenu.classList.remove('active')
+            body.classList.remove('_lock')
+        } else {
+            mobileMenu.classList.add('active')
+            body.classList.add('_lock')
+        }
+    })
+}
+
+
+
+const filterBtnOpen = document.querySelector('.mobile-filter__btn')
+const filterBtnClose = document.querySelector('.mobile-filter__close')
+const mobileFilter = document.querySelector('.mobile-filter__body')
+
+if (filterBtnOpen) {
+    filterBtnOpen.addEventListener('click', () => {
+        if (mobileFilter.classList.contains('active')) {
+            mobileFilter.classList.remove('active')
+            body.classList.remove('_lock')
+        } else {
+            mobileFilter.classList.add('active')
+            body.classList.add('_lock')
+        }
+    })
+    filterBtnClose.addEventListener('click', () => {
+        if (mobileFilter.classList.contains('active')) {
+            mobileFilter.classList.remove('active')
+            body.classList.remove('_lock')
+        } else {
+            mobileFilter.classList.add('active')
+            body.classList.add('_lock')
+        }
     })
 }
 
