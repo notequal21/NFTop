@@ -1039,6 +1039,16 @@ h6 {
   -webkit-text-fill-color: transparent;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+.wallet-menu-mob__body_disconnect button span {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .wallet-menu-mob__body_cancel {
@@ -2410,6 +2420,44 @@ h6 {
   margin: 0 0 0 15px;
 }
 
+.collection-col .profile-about {
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #f5f6f7;
+  position: relative;
+}
+
+.collection-col .profile-about img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.collection-col .profile-about__text {
+  margin: 154px 0 0 0;
+}
+
+.collection-col .profile-about__text-title {
+  font-family: Aeroport;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: #1b1e25;
+}
+
+.collection-col .profile-about__text-desc {
+  margin: 9px 0 0 0;
+  opacity: 0.5;
+  font-family: Aeroport;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: -0.26px;
+  color: #1b1e25;
+}
+
 .collection-item__approved {
   border-radius: 3px;
   background-color: #fff;
@@ -2567,6 +2615,31 @@ h6 {
   color: #fff;
 }
 
+.collection-item__promote-btn.under-review {
+  border-radius: 3px;
+  border: solid 1px #e6e8ec;
+  background-color: rgba(245, 246, 247, 0);
+  background-color: #fff;
+  background-image: none;
+  font-family: Aeroport;
+  font-size: 13px;
+  letter-spacing: -0.09px;
+  color: #1b1e25;
+}
+
+.collection-item__promote-btn.canceled {
+  border-radius: 3px;
+  border: none;
+  background-color: rgba(245, 246, 247, 0);
+  background-image: none;
+  font-family: Aeroport;
+  font-size: 13px;
+  letter-spacing: -0.09px;
+  color: #1b1e25;
+  border-radius: 3px;
+  background-color: #f5f6f7;
+}
+
 .collection-item__promote-btn svg {
   margin: 0 9px 0 0;
 }
@@ -2580,6 +2653,33 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.profile-stats__errors {
+  margin: 30px 0 0;
+}
+
+.profile-stats__errors-item {
+  margin: 16px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Aeroport;
+  font-size: 14px;
+  line-height: 1.07;
+  letter-spacing: -0.3px;
+  color: #1b1e25;
+}
+
+.profile-stats__errors-item svg {
+  margin: 0 10px 0 0;
+}
+
+.profile-stats__errors-item:first-child {
+  margin: 0;
 }
 
 .profile-stats__title {
@@ -2616,6 +2716,14 @@ h6 {
 }
 
 .profile-stats__item-value {
+  font-family: Aeroport;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.37px;
+  color: #1b1e25;
+}
+
+.profile-stats__item-value span {
   font-family: Aeroport;
   font-size: 17px;
   font-weight: 500;
@@ -2701,6 +2809,23 @@ h6 {
 
 .last-promote__body {
   margin: 20px 0 0 0;
+}
+
+.last-promote__body .last-promote__body-ico {
+  margin: 60px auto 0;
+  max-width: 30px;
+}
+
+.last-promote__body .last-promote__body-text {
+  opacity: 0.4;
+  font-family: Aeroport;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: -0.26px;
+  text-align: center;
+  color: #1b1e25;
+  max-width: 180px;
+  margin: 15px auto 0;
 }
 
 .last-promote__item {
@@ -2818,6 +2943,16 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   border-top: 1px solid rgba(245, 245, 245, 0.3);
+  position: relative;
+}
+
+.edit-menu_mob__body-btn span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 20px;
 }
 
 .edit-menu_mob__body-btn:first-child {
@@ -4879,6 +5014,20 @@ body.lock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .profile-stats {
+    height: auto;
+  }
+
+  .collection-col:nth-child(3) {
+    margin: 35px 0 0 0;
+  }
+
+  .collection-col .profile-about img {
+    max-height: 190px;
+    -o-object-position: left;
+       object-position: left;
   }
 
   .site-map__item {
