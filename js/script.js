@@ -134,6 +134,80 @@ if (document.getElementById('slider')) {
     // });
 }
 
+// login popup
+if (document.querySelector('#login-popup')) {
+    const body = document.querySelector('body')
+    const popup = document.querySelector('#login-popup')
+    const btnPopupOpen = document.querySelector('#login-popup-btn')
+    const btnPopupClose = document.querySelector('#login-popup-close')
+    const btnPopupBg = document.querySelector('#login-popup-bg')
+
+    btnPopupOpen.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+    btnPopupClose.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+    btnPopupBg.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+}
+
+// promote popup
+if (document.querySelector('#promote-popup')) {
+    const body = document.querySelector('body')
+    const popup = document.querySelector('#promote-popup')
+    const btnPopupOpen = document.querySelector('#promote-popup-btn')
+    const btnPopupClose = document.querySelector('#promote-popup-close')
+    const btnPopupBg = document.querySelector('#promote-popup-bg')
+
+    btnPopupOpen.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+    btnPopupClose.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+    btnPopupBg.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+}
+
 
 
 function testWebP(callback) {
