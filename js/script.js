@@ -141,8 +141,18 @@ if (document.querySelector('#login-popup')) {
     const btnPopupOpen = document.querySelector('#login-popup-btn')
     const btnPopupClose = document.querySelector('#login-popup-close')
     const btnPopupBg = document.querySelector('#login-popup-bg')
+    const btnPopupOpenMob = document.querySelector('#login-popup-btn-mobile')
 
     btnPopupOpen.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+    btnPopupOpenMob.addEventListener('click', () => {
         if(popup.classList.contains('active')) {
             popup.classList.remove('active')
             body.classList.remove('lock')
@@ -206,6 +216,86 @@ if (document.querySelector('#promote-popup')) {
             body.classList.add('lock')
         }
     })
+}
+
+// mobile edit menu account
+if (document.querySelector('#collection-edit-btn-open')) {
+    const body = document.querySelector('body')
+    const editMenuBtnOpen = document.querySelector('#collection-edit-btn-open')
+    const editMenuBtnClose = document.querySelector('#edit-menu-mob-close')
+    const editMenuBG = document.querySelector('#edit-menu_mob-bg')
+    const editMenu = document.querySelector('#edit-menu-mob')
+
+    editMenuBtnOpen.addEventListener('click', () => {
+        if (editMenu.classList.contains('active')) {
+            editMenu.classList.remove('active')
+            body.classList.remove('lock')
+        } else {
+            editMenu.classList.add('active')
+            body.classList.add('lock')
+        }
+    })   
+    editMenuBtnClose.addEventListener('click', () => {
+        if (editMenu.classList.contains('active')) {
+            editMenu.classList.remove('active')
+            body.classList.remove('lock')
+        } else {
+            editMenu.classList.add('active')
+            body.classList.add('lock')
+        }
+    })   
+    editMenuBG.addEventListener('click', () => {
+        if (editMenu.classList.contains('active')) {
+            editMenu.classList.remove('active')
+            body.classList.remove('lock')
+        } else {
+            editMenu.classList.add('active')
+            body.classList.add('lock')
+        }
+    })   
+}
+
+// mobile menu
+if (document.querySelector('#mobile-wallet-btn')) {
+    const body = document.querySelector('body')
+    const walletBtnOpen = document.querySelector('#mobile-wallet-btn')
+    const walletBtnClose = document.querySelector('#mobile-wallet-close')
+    const walletBg = document.querySelector('#mobile-wallet-bg')
+    const walletMenu = document.querySelector('#wallet-menu')
+    
+    walletBtnOpen.addEventListener('click', () => {
+        if (walletMenu.classList.contains('active')) {
+            walletMenu.classList.remove('active')
+            walletBtnOpen.classList.remove('active')
+            body.classList.remove('lock')
+        } else {
+            walletMenu.classList.add('active')
+            walletBtnOpen.classList.add('active')
+            body.classList.add('lock')
+        }
+    })   
+    walletBtnClose.addEventListener('click', () => {
+        if (walletMenu.classList.contains('active')) {
+            walletMenu.classList.remove('active')
+            walletBtnOpen.classList.remove('active')
+            body.classList.remove('lock')
+        } else {
+            walletMenu.classList.add('active')
+            walletBtnOpen.classList.add('active')
+            body.classList.add('lock')
+        }
+    })   
+    walletBg.addEventListener('click', () => {
+        if (walletMenu.classList.contains('active')) {
+            walletMenu.classList.remove('active')
+            walletBtnOpen.classList.remove('active')
+            body.classList.remove('lock')
+        } else {
+            walletMenu.classList.add('active')
+            walletBtnOpen.classList.add('active')
+            body.classList.add('lock')
+        }
+    })   
 }
 
 

@@ -14,7 +14,20 @@
         <div id="promote-popup" class="promote-popup">
     <div id="promote-popup-bg" class="promote-popup-bg"></div>
     <div class="promote-popup-body">
+        <div id="promote-popup-close" class="promote-popup__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 1 1 13M1 1l12 12"/>
+            </g>
+            </svg>
+        </div>
         <div class="promote-popup-col">
+            <div class="promote-popup__title promote-popup__title_mob">
+                Promote your collection
+            </div>
+            <div class="promote-popup__desc promote-popup__desc_mob">
+                Promoted collection get in front of more eyes by appearing on other pages around NFTop.
+            </div>
             <div class="promote-popup__preview">
                 <div class="promote-popup__preview-title">
                     Preview:
@@ -296,17 +309,60 @@
             </svg>
         </div>
     </div>
-    <div class="mobile-menu__btns">
-        <div class="mobile-menu__btns-item mobile-menu__btns-item_discover">
-            Discover
-        </div>
-        <div class="mobile-menu__btns-item mobile-menu__btns-item_login">
-            Log in
-        </div>
-        <div class="mobile-menu__btns-item mobile-menu__btns-item_post">
-            Post a collection
-        </div>
+    
+        <div class="mobile-menu__btns">
+    <div class="mobile-menu__btns-item mobile-menu__btns-item_discover">
+        Discover
     </div>
+    <div id="login-popup-btn-mobile" class="mobile-menu__btns-item mobile-menu__btns-item_profile">
+        My Profile
+    </div>
+    <div id="mobile-wallet-btn" class="mobile-menu__btns-item mobile-menu__btns-item_wallet">
+        <svg width="23px" height="16px" viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Wallet icon 3x</title>
+            <defs>
+                <linearGradient x1="100%" y1="14.001039%" x2="0%" y2="85.998961%" id="linearGradient-2">
+                    <stop stop-color="#7207F4" offset="0%"></stop>
+                    <stop stop-color="#1CAFF7" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <g id="UI/UX" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Profile_Approved" transform="translate(-1051.000000, -33.000000)">
+                    <g id="Group-5" transform="translate(1041.000000, 25.000000)">
+                        <g id="Wallet-icon-3x" transform="translate(10.000000, 8.000000)">
+                            <path d="M12.6705239,4.37810945 L21.4548891,4.37810945 C21.9807007,4.37810945 22.4069552,4.80436395 22.4069552,5.33017551 C22.4069552,5.49913425 22.3619923,5.66504953 22.2766823,5.81088934 L17.2361684,14.4277826 C16.6954085,15.3522261 15.7048123,15.920398 14.6338234,15.920398 L4.05104693,15.920398 L4.05104693,15.920398 L10.0838307,5.84427797 C10.6283536,4.93480096 11.6104986,4.37810945 12.6705239,4.37810945 Z" id="Rectangle-23" fill="#95D5F3"></path>
+                            <path d="M2.57850871,15.9203988 C1.15443572,15.9203988 -3.53296252e-06,14.7659596 -3.53296252e-06,13.3418866 L-3.53296252e-06,13.3247809 C-3.53296252e-06,12.802307 0.155391015,12.3161275 0.422483792,11.9099386 L6.36031158,1.51916837 C6.8970748,0.579757907 7.89606236,1.97510706e-15 8.97800818,0 L17.8107192,0 C18.3365307,-4.29656925e-16 18.7627852,0.426254494 18.7627852,0.952066059 C18.7627852,1.11938612 18.7186898,1.28375132 18.6349411,1.42860352 L12.5309965,11.985 L14.1706621,13.3333337 C14.7932952,13.8454153 14.882915,14.7652833 14.3708334,15.3879164 C14.3388628,15.4267891 14.3050797,15.4637767 14.2696581,15.4987973 L14.6949742,15.9205245 L2.57850871,15.9203988 Z" id="Rectangle-21-Copy-2" fill="url(#linearGradient-2)"></path>
+                            <rect id="Rectangle-22" fill="#95D5F3" x="12.1531408" y="10.7462687" width="5.16309903" height="5.17412935" rx="2.57851224"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+        <span class="mobile-menu__wallet">
+            1D…QB3ZcN46biBtkt7ee
+        </span>
+        <span class="mobile-menu__arrow">
+            <svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+                <path d="m1 1 4 4 4-4" stroke="#fff" stroke-width="1.6" fill="none" fill-rule="evenodd" opacity=".4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+        </span>
+    </div>
+    <div class="mobile-menu__btns-item mobile-menu__btns-item_post">
+        Post a collection
+    </div>
+</div>
+
+<div id="wallet-menu" class="wallet-menu-mob">
+    <div id="mobile-wallet-bg" class="wallet-menu-mob__bg"></div>
+    <div class="wallet-menu-mob__body">
+        <div class="wallet-menu-mob__body-btn wallet-menu-mob__body_disconnect">
+            <button>Disconnect</button>
+        </div>
+        <div id="mobile-wallet-close" class="wallet-menu-mob__body-btn wallet-menu-mob__body_cancel">Cancel</div>
+    </div>
+</div>
+    
+    
     <div class="mobile-menu__links">
         <a href="#" class="left-menu__join-item">
             <div class="left-menu__join-item-ico">
@@ -399,7 +455,7 @@
                             <span></span> Approved
                         </div>
                         <div class="collection-item__menu">
-                            <div class="collection-item__menu-btn">
+                            <div id="collection-edit-btn-open" class="collection-item__menu-btn">
                                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-v" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" class="svg-inline--fa fa-ellipsis-v fa-w-6 fa-7x"><path fill="currentColor" d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z" class=""></path></svg>
                             </div>
                             <div class="collection-item__menu-dropdown">
@@ -519,6 +575,16 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div id="edit-menu-mob" class="edit-menu_mob">
+    <div id="edit-menu_mob-bg" class="edit-menu_mob__bg"></div>
+    <div class="edit-menu_mob__body">
+        <div class="edit-menu_mob__body-btn">Edit</div>
+        <div class="edit-menu_mob__body-btn">Promote</div>
+        <div class="edit-menu_mob__body-btn">Delete</div>
+        <div id="edit-menu-mob-close" class="edit-menu_mob__body-btn edit-menu_mob__body-btn_cancel">Cancel</div>
     </div>
 </div>
 
