@@ -222,6 +222,7 @@ if (document.querySelector('#promote-popup')) {
     const popup = document.querySelector('#promote-popup')
     const btnPopupOpen = document.querySelector('#promote-popup-btn')
     const btnPopupClose = document.querySelector('#promote-popup-close')
+    const btnPopupCancel = document.querySelector('#promote-popup-cancel')
     const btnPopupBg = document.querySelector('#promote-popup-bg')
 
     btnPopupOpen.addEventListener('click', () => {
@@ -234,6 +235,15 @@ if (document.querySelector('#promote-popup')) {
         }
     })
     btnPopupClose.addEventListener('click', () => {
+        if(popup.classList.contains('active')) {
+            popup.classList.remove('active')
+            body.classList.remove('lock')
+        }  else {
+            popup.classList.add('active')
+            body.classList.add('lock')
+        }
+    })
+    btnPopupCancel.addEventListener('click', () => {
         if(popup.classList.contains('active')) {
             popup.classList.remove('active')
             body.classList.remove('lock')
