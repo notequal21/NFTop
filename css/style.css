@@ -4789,6 +4789,10 @@ h6 {
   opacity: 1;
 }
 
+.thanks-body__slider-top span:nth-child(2) {
+  margin: 0 0 0 50px;
+}
+
 .thanks-body__slider-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5545,6 +5549,10 @@ h6 {
   width: 15px;
   height: 15px;
   top: -6px;
+}
+
+.promote-popup__slider-item .thanks-body__slider-top span:nth-child(2) {
+  margin: 0 0 0 35px;
 }
 
 .promote-popup__btns {

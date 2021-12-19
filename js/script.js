@@ -122,24 +122,45 @@ if (document.getElementById('slider')) {
     let rangeSliderValueElementBtn = document.getElementById('slider-range-value-btn');
 
     noUiSlider.create(rangeSlider, {
-        start: 1000,
+        start: 100,
         connect: 'lower',
+        // step: 100,
+        // range: {
+        //     'min': 0,
+        //     'max': 50000
+        // }
         range: {
-            'min': 0,
-            'max': 50000
+            min: [0, 100],
+            "50%": [5000, 500],
+            max: [50000]
         }
     });
 
     if (document.getElementById('slider-range-value-btn-mob')) {
         let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
-        rangeSlider.noUiSlider.on('update', function (values, handle) {
-            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+            rangeSlider.noUiSlider.on('update', function (values, handle) {
+                rangeSliderValueElementBtnMob.innerHTML = `${values[handle]/100} ETH`;
         });
     }
     rangeSlider.noUiSlider.on('update', function (values, handle) {
         rangeSliderValueElement.innerHTML = `${Math.round(values[handle]/100)} ETH`;
-        rangeSliderValueElementBtn.innerHTML = `${Math.round(values[handle]/100)} ETH`;
     });
+    
+    rangeSlider.noUiSlider.on('update', function (values, handle) {
+        rangeSliderValueElement.innerHTML = `${values[handle]/100} ETH`;
+        rangeSliderValueElementBtn.innerHTML = `${values[handle]/100} ETH`;
+    });
+
+    // if (document.getElementById('slider-range-value-btn-mob')) {
+    //     let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
+    //     rangeSlider.noUiSlider.on('update', function (values, handle) {
+    //         rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+    //     });
+    // }
+    // rangeSlider.noUiSlider.on('update', function (values, handle) {
+    //     rangeSliderValueElement.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+    //     rangeSliderValueElementBtn.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+    // });
 }
 
 if (document.getElementById('promote-slider')) {
@@ -149,23 +170,25 @@ if (document.getElementById('promote-slider')) {
     let rangeSliderValueElementBtnPromote = document.getElementById('slider-range-value-btn');
 
     noUiSlider.create(rangeSliderPromote, {
-        start: 1000,
+        start: 100,
         connect: 'lower',
         range: {
-            'min': 100,
-            'max': 50000
+            min: [100, 100],
+            "50%": [5000, 500],
+            max: [50000]
         }
     });
 
     if (document.getElementById('slider-range-value-btn-mob')) {
         let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
         rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
-            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+            // rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+            rangeSliderValueElementBtnMob.innerHTML = `${values[handle]/100} ETH`;
         });
     }
     rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
-        rangeSliderValueElementPromote.innerHTML = `${Math.round(values[handle]/100)} ETH`;
-        rangeSliderValueElementBtnPromote.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+        rangeSliderValueElementPromote.innerHTML = `${values[handle]/100} ETH`;
+        rangeSliderValueElementBtnPromote.innerHTML = `${values[handle]/100} ETH`;
     });
 }
 
