@@ -6173,6 +6173,18 @@ body.lock {
        object-position: left;
   }
 
+  .discover .discover-body__item:hover .discover-body__item-img {
+    -webkit-transform: scale(1) translate(0);
+        -ms-transform: scale(1) translate(0);
+            transform: scale(1) translate(0);
+  }
+
+  .details .discover-body__item:hover .discover-body__item-img {
+    -webkit-transform: scale(1) translate(0);
+        -ms-transform: scale(1) translate(0);
+            transform: scale(1) translate(0);
+  }
+
   .site-map__item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
