@@ -133,12 +133,12 @@ if (document.getElementById('slider')) {
     if (document.getElementById('slider-range-value-btn-mob')) {
         let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
         rangeSlider.noUiSlider.on('update', function (values, handle) {
-            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle])} ETH`;
+            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle]/100)} ETH`;
         });
     }
     rangeSlider.noUiSlider.on('update', function (values, handle) {
-        rangeSliderValueElement.innerHTML = `${Math.round(values[handle])} ETH`;
-        rangeSliderValueElementBtn.innerHTML = `${Math.round(values[handle])} ETH`;
+        rangeSliderValueElement.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+        rangeSliderValueElementBtn.innerHTML = `${Math.round(values[handle]/100)} ETH`;
     });
 }
 
@@ -160,12 +160,12 @@ if (document.getElementById('promote-slider')) {
     if (document.getElementById('slider-range-value-btn-mob')) {
         let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
         rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
-            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle])} ETH`;
+            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle]/100)} ETH`;
         });
     }
     rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
-        rangeSliderValueElementPromote.innerHTML = `${Math.round(values[handle])} ETH`;
-        rangeSliderValueElementBtnPromote.innerHTML = `${Math.round(values[handle])} ETH`;
+        rangeSliderValueElementPromote.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+        rangeSliderValueElementBtnPromote.innerHTML = `${Math.round(values[handle]/100)} ETH`;
     });
 }
 
