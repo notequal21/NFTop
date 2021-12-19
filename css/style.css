@@ -5086,6 +5086,18 @@ h6 {
   line-height: 42px;
 }
 
+.create-body__item-input_date {
+  width: 100%;
+  position: relative;
+}
+
+.create-body__item-input_date::-webkit-calendar-picker-indicator {
+  width: calc(100% - 20px);
+  left: -1.5em;
+  background-position: 100% 0;
+  position: absolute;
+}
+
 .create-body__item-input::-webkit-input-placeholder {
   color: rgba(27, 30, 37, 0.5);
 }
