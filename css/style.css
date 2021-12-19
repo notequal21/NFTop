@@ -2674,7 +2674,7 @@ h6 {
   left: 10px;
   font-family: Aeroport;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.17px;
   color: #fff;
 }
@@ -2932,6 +2932,13 @@ h6 {
   font-size: 14px;
   letter-spacing: -0.1px;
   color: #fff;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.discount__btns-item:hover {
+  color: #d6d6d6;
 }
 
 .discount__btns-item:first-child {
@@ -2951,6 +2958,13 @@ h6 {
   font-weight: bold;
   letter-spacing: -0.1px;
   color: #000;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.discount__btns-item:first-child:hover {
+  background-color: #d6d6d6;
 }
 
 .discount__item-body {
@@ -2986,6 +3000,8 @@ h6 {
   margin: 10px 0 0 0;
   width: 150px;
   height: 150px;
+  overflow: hidden;
+  border-radius: 3px;
 }
 
 .discount__item-img img {
