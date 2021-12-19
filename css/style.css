@@ -1620,16 +1620,16 @@ h6 {
   opacity: 0.3;
 }
 
-.discover .discover-body__item-img {
+.discover .discover-body__item-img img {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.discover .discover-body__item:hover .discover-body__item-img {
-  -webkit-transform: scale(1.12) translate(0, -5%);
-      -ms-transform: scale(1.12) translate(0, -5%);
-          transform: scale(1.12) translate(0, -5%);
+.discover .discover-body__item:hover .discover-body__item-img img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .discover-body {
@@ -1648,8 +1648,8 @@ h6 {
   display: block;
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 320px;
-          flex: 0 0 320px;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
   margin: 0 0 35px 0;
 }
 
@@ -3242,16 +3242,16 @@ h6 {
   margin: 30px 0 0 0;
 }
 
-.details .discover-body__item-img {
+.details .discover-body__item-img img {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
 
-.details .discover-body__item:hover .discover-body__item-img {
-  -webkit-transform: scale(1.09) translate(0, -5%);
-      -ms-transform: scale(1.09) translate(0, -5%);
-          transform: scale(1.09) translate(0, -5%);
+.details .discover-body__item:hover .discover-body__item-img img {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .details .container {
@@ -3685,6 +3685,10 @@ h6 {
   margin: 0;
 }
 
+.thanks {
+  margin: 0 0 50px 0;
+}
+
 .thanks .container {
   max-width: 980px;
 }
@@ -3927,6 +3931,10 @@ h6 {
   letter-spacing: -0.3px;
   text-align: center;
   color: #fff;
+}
+
+.thanks-body__btns-mob_continue span {
+  margin: 0 0 0 5px;
 }
 
 .thanks-body__btns-mob_cancel {
@@ -4751,8 +4759,8 @@ body.lock {
 @media (max-width: 1500px) {
   .discover-body__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 31%;
-            flex: 0 0 31%;
+        -ms-flex: 0 0 32%;
+            flex: 0 0 32%;
   }
 
   .discover-body__item-img {
@@ -4773,12 +4781,6 @@ body.lock {
 }
 
 @media (max-width: 1200px) {
-  .discover .discover-body__item:hover .discover-body__item-img {
-    -webkit-transform: scale(1.04) translate(0, -3%);
-        -ms-transform: scale(1.04) translate(0, -3%);
-            transform: scale(1.04) translate(0, -3%);
-  }
-
   .discover-body__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 32%;

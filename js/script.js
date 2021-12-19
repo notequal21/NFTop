@@ -118,7 +118,8 @@ if (document.querySelectorAll('.js-tab-trigger')) {
 if (document.getElementById('slider')) {
     let rangeSlider = document.getElementById('slider');
     
-    // let rangeSliderValueElement = document.getElementById('slider-range-value');
+    let rangeSliderValueElement = document.getElementById('slider-range-value');
+    let rangeSliderValueElementBtn = document.getElementById('slider-range-value-btn');
 
     noUiSlider.create(rangeSlider, {
         start: 1000,
@@ -129,9 +130,43 @@ if (document.getElementById('slider')) {
         }
     });
 
-    // rangeSlider.noUiSlider.on('update', function (values, handle) {
-    //     rangeSliderValueElement.innerHTML = values[handle];
-    // });
+    if (document.getElementById('slider-range-value-btn-mob')) {
+        let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
+        rangeSlider.noUiSlider.on('update', function (values, handle) {
+            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle])} ETH`;
+        });
+    }
+    rangeSlider.noUiSlider.on('update', function (values, handle) {
+        rangeSliderValueElement.innerHTML = `${Math.round(values[handle])} ETH`;
+        rangeSliderValueElementBtn.innerHTML = `${Math.round(values[handle])} ETH`;
+    });
+}
+
+if (document.getElementById('promote-slider')) {
+    let rangeSliderPromote = document.getElementById('promote-slider');
+    
+    let rangeSliderValueElementPromote = document.getElementById('slider-range-value');
+    let rangeSliderValueElementBtnPromote = document.getElementById('slider-range-value-btn');
+
+    noUiSlider.create(rangeSliderPromote, {
+        start: 1000,
+        connect: 'lower',
+        range: {
+            'min': 100,
+            'max': 50000
+        }
+    });
+
+    if (document.getElementById('slider-range-value-btn-mob')) {
+        let rangeSliderValueElementBtnMob = document.getElementById('slider-range-value-btn-mob');
+        rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
+            rangeSliderValueElementBtnMob.innerHTML = `${Math.round(values[handle])} ETH`;
+        });
+    }
+    rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
+        rangeSliderValueElementPromote.innerHTML = `${Math.round(values[handle])} ETH`;
+        rangeSliderValueElementBtnPromote.innerHTML = `${Math.round(values[handle])} ETH`;
+    });
 }
 
 // login popup
