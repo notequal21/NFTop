@@ -142,12 +142,12 @@ if (document.getElementById('slider')) {
                 rangeSliderValueElementBtnMob.innerHTML = `${values[handle]/100} ETH`;
         });
     }
-    rangeSlider.noUiSlider.on('update', function (values, handle) {
-        rangeSliderValueElement.innerHTML = `${Math.round(values[handle]/100)} ETH`;
-    });
+    // rangeSlider.noUiSlider.on('update', function (values, handle) {
+    //     rangeSliderValueElement.innerHTML = `${Math.round(values[handle]/100)} ETH`;
+    // });
     
     rangeSlider.noUiSlider.on('update', function (values, handle) {
-        rangeSliderValueElement.innerHTML = `${values[handle]/100} ETH`;
+        rangeSliderValueElement.innerHTML = `${Math.round(values[handle])} UPS`;
         rangeSliderValueElementBtn.innerHTML = `${values[handle]/100} ETH`;
     });
 
@@ -187,7 +187,7 @@ if (document.getElementById('promote-slider')) {
         });
     }
     rangeSliderPromote.noUiSlider.on('update', function (values, handle) {
-        rangeSliderValueElementPromote.innerHTML = `${values[handle]/100} ETH`;
+        rangeSliderValueElementPromote.innerHTML = `${Math.round(values[handle])} UPS`;
         rangeSliderValueElementBtnPromote.innerHTML = `${values[handle]/100} ETH`;
     });
 }
