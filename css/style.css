@@ -2121,6 +2121,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .footer-body__subscribe input {
@@ -2139,11 +2140,11 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 19px;
   color: #1b1e25;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  padding: 0 140px 0 19px;
 }
 
 .footer-body__subscribe input::-webkit-input-placeholder {
@@ -2180,6 +2181,17 @@ h6 {
   font-weight: 500;
   letter-spacing: -0.2px;
   color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.footer-body__subscribe button:hover {
+  width: 100%;
 }
 
 .discover {
@@ -2948,11 +2960,10 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 42px;
-  padding: 0 30px;
+  height: 38px;
+  padding: 0 26px;
   margin: 0;
   border-radius: 3px;
-  background-color: #fff;
   font-family: Aeroport;
   font-size: 14px;
   font-weight: bold;
@@ -2961,10 +2972,38 @@ h6 {
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.discount__btns-item:first-child::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 120%;
+  height: 60px;
+  background-color: #fff;
+  -webkit-transform: skew(20deg, 0deg) translate(10%, -10px);
+      -ms-transform: skew(20deg, 0deg) translate(10%, -10px);
+          transform: skew(20deg, 0deg) translate(10%, -10px);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 .discount__btns-item:first-child:hover {
-  background-color: #d6d6d6;
+  color: #fff;
+}
+
+.discount__btns-item:first-child:hover::before {
+  -webkit-transform: skew(20deg, 0deg) translate(110%, -10px);
+      -ms-transform: skew(20deg, 0deg) translate(110%, -10px);
+          transform: skew(20deg, 0deg) translate(110%, -10px);
 }
 
 .discount__item-body {
