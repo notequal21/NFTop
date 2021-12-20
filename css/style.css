@@ -2194,6 +2194,12 @@ h6 {
   width: 100%;
 }
 
+.footer-body__subscribe button:focus {
+  width: 100%;
+  background-color: #4fc54f;
+  background-image: none;
+}
+
 .discover {
   margin: 30px 0 100px 0;
 }
