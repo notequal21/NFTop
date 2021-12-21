@@ -194,191 +194,191 @@ if (document.getElementById('promote-slider')) {
 
 // login popup
 if (document.querySelector('#login-popup')) {
-    const body = document.querySelector('body')
-    const popup = document.querySelector('#login-popup')
-    const btnPopupOpen = document.querySelector('#login-popup-btn')
-    const btnPopupClose = document.querySelector('#login-popup-close')
-    const btnPopupBg = document.querySelector('#login-popup-bg')
-    const btnPopupOpenMob = document.querySelector('#login-popup-btn-mobile')
+	const body = document.querySelector('body')
+	const popup = document.querySelector('#login-popup')
+	const btnPopupOpen = document.querySelector('#login-popup-btn')
+	const btnPopupClose = document.querySelector('#login-popup-close')
+	const btnPopupBg = document.querySelector('#login-popup-bg')
+	const btnPopupOpenMob = document.querySelector('#login-popup-btn-mobile')
 
-    btnPopupOpen.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
-    btnPopupOpenMob.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
-    btnPopupClose.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
-    btnPopupBg.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
+	btnPopupOpen.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	btnPopupOpenMob.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	btnPopupClose.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	btnPopupBg.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
 }
 
 // promote popup
 if (document.querySelector('#promote-popup')) {
-    const body = document.querySelector('body')
-    const popup = document.querySelector('#promote-popup')
-    const btnPopupOpen = document.querySelector('#promote-popup-btn')
-    const btnPopupClose = document.querySelector('#promote-popup-close')
-    const btnPopupCancel = document.querySelector('#promote-popup-cancel')
-    const btnPopupBg = document.querySelector('#promote-popup-bg')
+	const body = document.querySelector('body')
+	const popup = document.querySelector('#promote-popup')
+	const btnPopupOpen = document.querySelector('#promote-popup-btn')
+	const btnPopupClose = document.querySelector('#promote-popup-close')
+	const btnPopupCancel = document.querySelector('#promote-popup-cancel')
+	const btnPopupBg = document.querySelector('#promote-popup-bg')
 
-    if (document.querySelector('#promote-popup-btn-edit-menu')) {
-        const btnPopupOpenEditMenu = document.querySelector('#promote-popup-btn-edit-menu')
-        btnPopupOpenEditMenu.addEventListener('click', () => {
-            if(popup.classList.contains('active')) {
-                popup.classList.remove('active')
-                body.classList.remove('lock')
-            }  else {
-                popup.classList.add('active')
-                body.classList.add('lock')
-            }
-        })
-    }
+	if (document.querySelector('#promote-popup-btn-edit-menu')) {
+		const btnPopupOpenEditMenu = document.querySelector('#promote-popup-btn-edit-menu')
+		btnPopupOpenEditMenu.addEventListener('click', () => {
+			if (popup.classList.contains('active')) {
+				popup.classList.remove('active')
+				body.classList.remove('lock')
+			} else {
+				popup.classList.add('active')
+				body.classList.add('lock')
+			}
+		})
+	}
 
-    btnPopupOpen.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
-    btnPopupClose.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
-    btnPopupCancel.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
-    btnPopupBg.addEventListener('click', () => {
-        if(popup.classList.contains('active')) {
-            popup.classList.remove('active')
-            body.classList.remove('lock')
-        }  else {
-            popup.classList.add('active')
-            body.classList.add('lock')
-        }
-    })
+	btnPopupOpen.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	btnPopupClose.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	btnPopupCancel.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	btnPopupBg.addEventListener('click', () => {
+		if (popup.classList.contains('active')) {
+			popup.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			popup.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
 }
 
 // mobile edit menu account
 if (window.innerWidth < 768) {
-    if (document.querySelector('#collection-edit-btn-open')) {
-        const body = document.querySelector('body')
-        const editMenuBtnOpen = document.querySelector('#collection-edit-btn-open')
-        const editMenuBtnClose = document.querySelector('#edit-menu-mob-close')
-        const editMenuBG = document.querySelector('#edit-menu_mob-bg')
-        const editMenu = document.querySelector('#edit-menu-mob')
+	if (document.querySelector('#collection-edit-btn-open')) {
+		const body = document.querySelector('body')
+		const editMenuBtnOpen = document.querySelector('#collection-edit-btn-open')
+		const editMenuBtnClose = document.querySelector('#edit-menu-mob-close')
+		const editMenuBG = document.querySelector('#edit-menu_mob-bg')
+		const editMenu = document.querySelector('#edit-menu-mob')
 
-        editMenuBtnOpen.addEventListener('click', () => {
-            if (editMenu.classList.contains('active')) {
-                editMenu.classList.remove('active')
-                body.classList.remove('lock')
-            } else {
-                editMenu.classList.add('active')
-                body.classList.add('lock')
-            }
-        })   
-        editMenuBtnClose.addEventListener('click', () => {
-            if (editMenu.classList.contains('active')) {
-                editMenu.classList.remove('active')
-                body.classList.remove('lock')
-            } else {
-                editMenu.classList.add('active')
-                body.classList.add('lock')
-            }
-        })   
-        editMenuBG.addEventListener('click', () => {
-            if (editMenu.classList.contains('active')) {
-                editMenu.classList.remove('active')
-                body.classList.remove('lock')
-            } else {
-                editMenu.classList.add('active')
-                body.classList.add('lock')
-            }
-        })   
-    }
+		editMenuBtnOpen.addEventListener('click', () => {
+			if (editMenu.classList.contains('active')) {
+				editMenu.classList.remove('active')
+				body.classList.remove('lock')
+			} else {
+				editMenu.classList.add('active')
+				body.classList.add('lock')
+			}
+		})
+		editMenuBtnClose.addEventListener('click', () => {
+			if (editMenu.classList.contains('active')) {
+				editMenu.classList.remove('active')
+				body.classList.remove('lock')
+			} else {
+				editMenu.classList.add('active')
+				body.classList.add('lock')
+			}
+		})
+		editMenuBG.addEventListener('click', () => {
+			if (editMenu.classList.contains('active')) {
+				editMenu.classList.remove('active')
+				body.classList.remove('lock')
+			} else {
+				editMenu.classList.add('active')
+				body.classList.add('lock')
+			}
+		})
+	}
 }
 
 // mobile menu
 if (document.querySelector('#mobile-wallet-btn')) {
-    const body = document.querySelector('body')
-    const walletBtnOpen = document.querySelector('#mobile-wallet-btn')
-    const walletBtnClose = document.querySelector('#mobile-wallet-close')
-    const walletBg = document.querySelector('#mobile-wallet-bg')
-    const walletMenu = document.querySelector('#wallet-menu')
-    
-    walletBtnOpen.addEventListener('click', () => {
-        if (walletMenu.classList.contains('active')) {
-            walletMenu.classList.remove('active')
-            walletBtnOpen.classList.remove('active')
-            body.classList.remove('lock')
-        } else {
-            walletMenu.classList.add('active')
-            walletBtnOpen.classList.add('active')
-            body.classList.add('lock')
-        }
-    })   
-    walletBtnClose.addEventListener('click', () => {
-        if (walletMenu.classList.contains('active')) {
-            walletMenu.classList.remove('active')
-            walletBtnOpen.classList.remove('active')
-            body.classList.remove('lock')
-        } else {
-            walletMenu.classList.add('active')
-            walletBtnOpen.classList.add('active')
-            body.classList.add('lock')
-        }
-    })   
-    walletBg.addEventListener('click', () => {
-        if (walletMenu.classList.contains('active')) {
-            walletMenu.classList.remove('active')
-            walletBtnOpen.classList.remove('active')
-            body.classList.remove('lock')
-        } else {
-            walletMenu.classList.add('active')
-            walletBtnOpen.classList.add('active')
-            body.classList.add('lock')
-        }
-    })   
+	const body = document.querySelector('body')
+	const walletBtnOpen = document.querySelector('#mobile-wallet-btn')
+	const walletBtnClose = document.querySelector('#mobile-wallet-close')
+	const walletBg = document.querySelector('#mobile-wallet-bg')
+	const walletMenu = document.querySelector('#wallet-menu')
+
+	walletBtnOpen.addEventListener('click', () => {
+		if (walletMenu.classList.contains('active')) {
+			walletMenu.classList.remove('active')
+			walletBtnOpen.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			walletMenu.classList.add('active')
+			walletBtnOpen.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	walletBtnClose.addEventListener('click', () => {
+		if (walletMenu.classList.contains('active')) {
+			walletMenu.classList.remove('active')
+			walletBtnOpen.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			walletMenu.classList.add('active')
+			walletBtnOpen.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
+	walletBg.addEventListener('click', () => {
+		if (walletMenu.classList.contains('active')) {
+			walletMenu.classList.remove('active')
+			walletBtnOpen.classList.remove('active')
+			body.classList.remove('lock')
+		} else {
+			walletMenu.classList.add('active')
+			walletBtnOpen.classList.add('active')
+			body.classList.add('lock')
+		}
+	})
 }
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
