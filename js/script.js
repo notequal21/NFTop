@@ -248,6 +248,19 @@ if (document.querySelector('#promote-popup')) {
     const btnPopupCancel = document.querySelector('#promote-popup-cancel')
     const btnPopupBg = document.querySelector('#promote-popup-bg')
 
+    if (document.querySelector('#promote-popup-btn-edit-menu')) {
+        const btnPopupOpenEditMenu = document.querySelector('#promote-popup-btn-edit-menu')
+        btnPopupOpenEditMenu.addEventListener('click', () => {
+            if(popup.classList.contains('active')) {
+                popup.classList.remove('active')
+                body.classList.remove('lock')
+            }  else {
+                popup.classList.add('active')
+                body.classList.add('lock')
+            }
+        })
+    }
+
     btnPopupOpen.addEventListener('click', () => {
         if(popup.classList.contains('active')) {
             popup.classList.remove('active')
@@ -287,40 +300,42 @@ if (document.querySelector('#promote-popup')) {
 }
 
 // mobile edit menu account
-if (document.querySelector('#collection-edit-btn-open')) {
-    const body = document.querySelector('body')
-    const editMenuBtnOpen = document.querySelector('#collection-edit-btn-open')
-    const editMenuBtnClose = document.querySelector('#edit-menu-mob-close')
-    const editMenuBG = document.querySelector('#edit-menu_mob-bg')
-    const editMenu = document.querySelector('#edit-menu-mob')
+if (window.innerWidth < 768) {
+    if (document.querySelector('#collection-edit-btn-open')) {
+        const body = document.querySelector('body')
+        const editMenuBtnOpen = document.querySelector('#collection-edit-btn-open')
+        const editMenuBtnClose = document.querySelector('#edit-menu-mob-close')
+        const editMenuBG = document.querySelector('#edit-menu_mob-bg')
+        const editMenu = document.querySelector('#edit-menu-mob')
 
-    editMenuBtnOpen.addEventListener('click', () => {
-        if (editMenu.classList.contains('active')) {
-            editMenu.classList.remove('active')
-            body.classList.remove('lock')
-        } else {
-            editMenu.classList.add('active')
-            body.classList.add('lock')
-        }
-    })   
-    editMenuBtnClose.addEventListener('click', () => {
-        if (editMenu.classList.contains('active')) {
-            editMenu.classList.remove('active')
-            body.classList.remove('lock')
-        } else {
-            editMenu.classList.add('active')
-            body.classList.add('lock')
-        }
-    })   
-    editMenuBG.addEventListener('click', () => {
-        if (editMenu.classList.contains('active')) {
-            editMenu.classList.remove('active')
-            body.classList.remove('lock')
-        } else {
-            editMenu.classList.add('active')
-            body.classList.add('lock')
-        }
-    })   
+        editMenuBtnOpen.addEventListener('click', () => {
+            if (editMenu.classList.contains('active')) {
+                editMenu.classList.remove('active')
+                body.classList.remove('lock')
+            } else {
+                editMenu.classList.add('active')
+                body.classList.add('lock')
+            }
+        })   
+        editMenuBtnClose.addEventListener('click', () => {
+            if (editMenu.classList.contains('active')) {
+                editMenu.classList.remove('active')
+                body.classList.remove('lock')
+            } else {
+                editMenu.classList.add('active')
+                body.classList.add('lock')
+            }
+        })   
+        editMenuBG.addEventListener('click', () => {
+            if (editMenu.classList.contains('active')) {
+                editMenu.classList.remove('active')
+                body.classList.remove('lock')
+            } else {
+                editMenu.classList.add('active')
+                body.classList.add('lock')
+            }
+        })   
+    }
 }
 
 // mobile menu

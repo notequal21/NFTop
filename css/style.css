@@ -5136,6 +5136,11 @@ h6 {
   line-height: 42px;
 }
 
+.create-body__item-input:focus {
+  border: 1px solid #4464f6;
+  outline: solid rgba(64, 103, 246, 0.2);
+}
+
 .create-body__item-input_date {
   width: 100%;
   position: relative;
