@@ -4477,6 +4477,12 @@ h6 {
       justify-content: space-around;
 }
 
+.details-info__timer .countdown {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .details-info__timer-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4492,7 +4498,7 @@ h6 {
   color: #777e90;
 }
 
-.details-info__timer-item span {
+.details-info__timer-item span.num {
   font-family: Aeroport;
   font-size: 32px;
   font-weight: 500;
@@ -5820,6 +5826,20 @@ body.lock {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.countdown.without-days .day {
+  display: none;
+}
+
+.countdown.without-words .word {
+  display: none;
 }
 
 @media (max-width: 1500px) {
