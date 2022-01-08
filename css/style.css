@@ -2758,7 +2758,6 @@ h6 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  display: none;
 }
 
 .discover-body__stats-item {
